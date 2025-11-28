@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
@@ -24,13 +26,15 @@
         <!-- Intro Section -->
         <section id="intro">
             <h2><i class="fas fa-chart-line"></i> Análisis de Mercado</h2>
-            <p>Este dashboard interactivo muestra predicciones de streaming y comparativas de mercado utilizando datos simulados procesados con <strong>Python</strong> y visualizados con <strong>Plotly</strong>.</p>
+            <p>Este dashboard interactivo muestra predicciones de streaming y comparativas de mercado utilizando datos
+                simulados procesados con <strong>Python</strong> y visualizados con <strong>Plotly</strong>.</p>
         </section>
 
         <!-- Chart 1: Trends -->
         <section id="trends">
             <h2><i class="fas fa-globe-americas"></i> Top Canciones por País</h2>
-            <p style="margin-bottom: 1rem; color: #b3b3b3;">Predicción de streams semanales en mercados clave de habla hispana y USA.</p>
+            <p style="margin-bottom: 1rem; color: #b3b3b3;">Predicción de streams semanales en mercados clave de habla
+                hispana y USA.</p>
             <div class="chart-container">
                 <iframe src="assets/chart1.html" title="Top Canciones"></iframe>
             </div>
@@ -39,7 +43,8 @@
         <!-- Chart 2: Comparison -->
         <section id="comparison">
             <h2><i class="fas fa-balance-scale"></i> Spotify vs Competencia</h2>
-            <p style="margin-bottom: 1rem; color: #b3b3b3;">Comparativa de crecimiento de usuarios premium en el primer semestre.</p>
+            <p style="margin-bottom: 1rem; color: #b3b3b3;">Comparativa de crecimiento de usuarios premium en el primer
+                semestre.</p>
             <div class="chart-container">
                 <iframe src="assets/chart2.html" title="Comparativa Plataformas"></iframe>
             </div>
@@ -48,18 +53,86 @@
         <!-- Chart 3: Genres -->
         <section id="genres">
             <h2><i class="fas fa-music"></i> Distribución de Géneros</h2>
-            <p style="margin-bottom: 1rem; color: #b3b3b3;">Desglose de géneros más escuchados. Haz clic en los sectores para profundizar.</p>
+            <p style="margin-bottom: 1rem; color: #b3b3b3;">Desglose de géneros más escuchados. Haz clic en los sectores
+                para profundizar.</p>
             <div class="chart-container">
                 <iframe src="assets/chart3.html" title="Géneros Musicales"></iframe>
+            </div>
+        </section>
+
+        <!-- Business Model Section -->
+        <section id="business-model">
+            <h2><i class="fas fa-briefcase"></i> Modelo de Negocio</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-user-plus fa-2x" style="color: #1DB954;"></i>
+                    <h3>Freemium</h3>
+                    <p>Atracción masiva con versión gratuita (con anuncios) para convertir a Premium.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-money-bill-wave fa-2x" style="color: #1DB954;"></i>
+                    <h3>Suscripción</h3>
+                    <p>Ingresos recurrentes estables. 90% de los ingresos totales.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-ad fa-2x" style="color: #1DB954;"></i>
+                    <h3>Publicidad</h3>
+                    <p>Monetización de usuarios gratuitos y podcasts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financials & HR -->
+        <section id="finance-hr">
+            <h2><i class="fas fa-chart-pie"></i> Finanzas & Talento</h2>
+            <div class="charts-grid">
+                <div class="chart-wrapper">
+                    <h3>Ingresos vs Utilidad</h3>
+                    <iframe src="assets/chart4.html" title="Finanzas"></iframe>
+                </div>
+                <div class="chart-wrapper">
+                    <h3>Salarios por Área</h3>
+                    <iframe src="assets/chart5.html" title="Salarios"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Presence -->
+        <section id="global">
+            <h2><i class="fas fa-map-marked-alt"></i> Presencia Global</h2>
+            <p style="margin-bottom: 1rem; color: #b3b3b3;">Nuestras oficinas principales y distribución de talento.</p>
+            <div class="chart-container">
+                <iframe src="assets/chart6.html" title="Mapa Oficinas"></iframe>
+            </div>
+        </section>
+
+        <!-- Tech & Challenges -->
+        <section id="tech-challenges">
+            <h2><i class="fas fa-server"></i> Infraestructura & Desafíos</h2>
+            <div class="tech-container">
+                <div class="tech-text">
+                    <h3>Arquitectura Simplificada</h3>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check"></i> <strong>Cliente:</strong> App Móvil / Web / Desktop</li>
+                        <li><i class="fas fa-check"></i> <strong>CDN:</strong> Entrega rápida de audio (Global)</li>
+                        <li><i class="fas fa-check"></i> <strong>Backend:</strong> Microservicios en Google Cloud</li>
+                    </ul>
+                    <h3 style="margin-top: 1.5rem;">Incidente Reciente</h3>
+                    <p>Pico de latencia detectado a las 14:00 por falla en caché regional.</p>
+                </div>
+                <div class="chart-wrapper">
+                    <iframe src="assets/chart7.html" title="Latencia"></iframe>
+                </div>
             </div>
         </section>
 
         <!-- Tech Stack Section -->
         <section id="tech-stack">
             <h2><i class="fas fa-code"></i> Cómo se hizo (Python + Plotly)</h2>
-            <p style="margin-bottom: 1rem;">El núcleo de este análisis es un script de Python que procesa los datos y genera visualizaciones interactivas.</p>
+            <p style="margin-bottom: 1rem;">El núcleo de este análisis es un script de Python que procesa los datos y
+                genera visualizaciones interactivas.</p>
             <div class="code-block">
-<pre>
+                <pre>
 <span class="code-keyword">import</span> plotly.graph_objects <span class="code-keyword">as</span> go
 <span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
 
@@ -82,4 +155,5 @@
     </footer>
 
 </body>
+
 </html>
