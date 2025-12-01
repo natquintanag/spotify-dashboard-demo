@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -21,7 +23,7 @@
                 <li><a href="#competition">Competencia</a></li>
                 <li><a href="#users">Usuarios</a></li>
                 <li><a href="#artists">Artistas</a></li>
-                <li><a href="#github">GitHub Pages</a></li>
+
             </ul>
         </div>
     </nav>
@@ -41,9 +43,15 @@
         <div class="grid-2">
             <div>
                 <h3>¿Qué es Spotify?</h3>
-                <p>Spotify es un servicio de música, pódcasts y vídeos digitales que te da acceso a millones de canciones y a otro contenido de creadores de todo el mundo. Fundada en 2006 en Estocolmo, Suecia, por <strong>Daniel Ek</strong> y <strong>Martin Lorentzon</strong>.</p>
+                <p>Spotify es un servicio de música, pódcasts y vídeos digitales que te da acceso a millones de
+                    canciones y a otro contenido de creadores de todo el mundo. Fundada en 2006 en Estocolmo, Suecia,
+                    por <strong>Daniel Ek</strong> y <strong>Martin Lorentzon</strong>.</p>
                 <h3>El Problema que Resolvió</h3>
-                <p>A principios de los 2000, la piratería (Napster, LimeWire) estaba destruyendo los ingresos de la industria. iTunes ofrecía descargas pagas, pero era costoso. Spotify ofreció una tercera vía: <strong>acceso legal, instantáneo y gratuito (con anuncios)</strong>, combatiendo la piratería con conveniencia.</p>
+                <p>A principios de los 2000, la piratería (Napster, LimeWire) estaba destruyendo los ingresos de la
+                    industria. iTunes ofrecía descargas pagas, pero era costoso. Spotify ofreció una tercera vía:
+                    <strong>acceso legal, instantáneo y gratuito (con anuncios)</strong>, combatiendo la piratería con
+                    conveniencia.
+                </p>
             </div>
             <div class="grid-2" style="margin-top: 0; gap: 20px;">
                 <div class="card">
@@ -69,8 +77,9 @@
     <!-- 2. Cómo Funciona -->
     <section id="tech" class="container">
         <h2>2. Arquitectura y Algoritmos</h2>
-        <p>Spotify no es solo un reproductor de MP3 en la nube; es una compleja red de distribución de contenido y un motor de recomendación de clase mundial.</p>
-        
+        <p>Spotify no es solo un reproductor de MP3 en la nube; es una compleja red de distribución de contenido y un
+            motor de recomendación de clase mundial.</p>
+
         <div class="grid-2">
             <div>
                 <h3>El Flujo de Contenido</h3>
@@ -88,15 +97,19 @@
                     </p>
                 </div>
                 <h3>Modelo Freemium</h3>
-                <p>La base del éxito. Los usuarios gratuitos atraen volumen y datos; los usuarios premium generan los ingresos reales. El "funnel" de conversión es uno de los más eficientes del mundo.</p>
+                <p>La base del éxito. Los usuarios gratuitos atraen volumen y datos; los usuarios premium generan los
+                    ingresos reales. El "funnel" de conversión es uno de los más eficientes del mundo.</p>
             </div>
             <div>
                 <h3>El "Algotorial" (Algoritmo + Editorial)</h3>
                 <p>Spotify combina curaduría humana (playlists como "Viva Latino") con Machine Learning avanzado.</p>
                 <ul style="list-style: none; margin-top: 20px;">
-                    <li style="margin-bottom: 15px;"><strong>🤖 Collaborative Filtering:</strong> "Si te gusta A y a otro usuario le gusta A y B, probablemente te guste B".</li>
-                    <li style="margin-bottom: 15px;"><strong>📝 NLP (Natural Language Processing):</strong> Analiza blogs y noticias para entender qué se dice de una canción.</li>
-                    <li style="margin-bottom: 15px;"><strong>🎵 Raw Audio Models:</strong> Analiza el audio en sí (tempo, clave, distorsión) para recomendar canciones nuevas sin datos previos.</li>
+                    <li style="margin-bottom: 15px;"><strong>🤖 Collaborative Filtering:</strong> "Si te gusta A y a
+                        otro usuario le gusta A y B, probablemente te guste B".</li>
+                    <li style="margin-bottom: 15px;"><strong>📝 NLP (Natural Language Processing):</strong> Analiza
+                        blogs y noticias para entender qué se dice de una canción.</li>
+                    <li style="margin-bottom: 15px;"><strong>🎵 Raw Audio Models:</strong> Analiza el audio en sí
+                        (tempo, clave, distorsión) para recomendar canciones nuevas sin datos previos.</li>
                 </ul>
             </div>
         </div>
@@ -105,24 +118,30 @@
     <!-- 3. Análisis Financiero -->
     <section id="finance" class="container">
         <h2>3. Análisis Financiero</h2>
-        <p>A pesar de su dominio, Spotify ha luchado históricamente por la rentabilidad debido a los altos costos de licencias (Royalties).</p>
-        
+        <p>A pesar de su dominio, Spotify ha luchado históricamente por la rentabilidad debido a los altos costos de
+            licencias (Royalties).</p>
+
         <div class="grid-2">
             <div>
                 <h3>Ingresos vs Rentabilidad</h3>
-                <p>Spotify paga aproximadamente el <strong>70%</strong> de sus ingresos a los titulares de derechos (disqueras, editoras). Esto deja un margen bruto bajo (~25-30%) comparado con otras tech companies.</p>
+                <p>Spotify paga aproximadamente el <strong>70%</strong> de sus ingresos a los titulares de derechos
+                    (disqueras, editoras). Esto deja un margen bruto bajo (~25-30%) comparado con otras tech companies.
+                </p>
                 <div class="chart-container">
                     <canvas id="financialsChart"></canvas>
                 </div>
             </div>
             <div>
                 <h3>Modelo de Negocio</h3>
-                <p>El dinero entra principalmente por suscripciones, lo que da estabilidad, pero la publicidad está creciendo rápido gracias a los pódcasts.</p>
+                <p>El dinero entra principalmente por suscripciones, lo que da estabilidad, pero la publicidad está
+                    creciendo rápido gracias a los pódcasts.</p>
                 <div class="chart-container">
                     <canvas id="revenueSplitChart"></canvas>
                 </div>
                 <h3 style="margin-top: 20px;">Proyecciones</h3>
-                <p>La estrategia a 5 años es expandir el margen bruto mediante "Two-Sided Marketplace" (cobrar a artistas por promoción) y reducir dependencia musical con Pódcasts y Audiolibros (márgenes más altos).</p>
+                <p>La estrategia a 5 años es expandir el margen bruto mediante "Two-Sided Marketplace" (cobrar a
+                    artistas por promoción) y reducir dependencia musical con Pódcasts y Audiolibros (márgenes más
+                    altos).</p>
             </div>
         </div>
     </section>
@@ -130,8 +149,9 @@
     <!-- 4. Competencia -->
     <section id="competition" class="container">
         <h2>4. Análisis Competitivo</h2>
-        <p>El mercado del streaming es un oligopolio feroz. Spotify lidera en cuota, pero compite contra gigantes que no necesitan que la música sea rentable (Apple, Amazon, Google).</p>
-        
+        <p>El mercado del streaming es un oligopolio feroz. Spotify lidera en cuota, pero compite contra gigantes que no
+            necesitan que la música sea rentable (Apple, Amazon, Google).</p>
+
         <div class="grid-2">
             <div class="chart-container" style="height: 300px;">
                 <canvas id="marketShareChart"></canvas>
@@ -195,7 +215,8 @@
         <div class="grid-2">
             <div>
                 <h3>Crecimiento Sostenido</h3>
-                <p>A pesar de la saturación en mercados occidentales, Spotify sigue creciendo fuertemente en LATAM, Asia y África.</p>
+                <p>A pesar de la saturación en mercados occidentales, Spotify sigue creciendo fuertemente en LATAM, Asia
+                    y África.</p>
                 <div class="chart-container">
                     <canvas id="userGrowthChart"></canvas>
                 </div>
@@ -203,14 +224,17 @@
             <div>
                 <h3>Perfiles de Usuario</h3>
                 <ul style="margin-top: 20px;">
-                    <li><strong>Gen Z:</strong> Obsesionados con el descubrimiento, usan "Daylist" y comparten letras en Instagram.</li>
+                    <li><strong>Gen Z:</strong> Obsesionados con el descubrimiento, usan "Daylist" y comparten letras en
+                        Instagram.</li>
                     <li><strong>Millennials:</strong> Nostalgia, pódcasts de noticias y true crime.</li>
-                    <li><strong>Casuals:</strong> Usan playlists editoriales ("Éxitos España", "Café con Leche") como radio de fondo.</li>
+                    <li><strong>Casuals:</strong> Usan playlists editoriales ("Éxitos España", "Café con Leche") como
+                        radio de fondo.</li>
                 </ul>
                 <h3 style="margin-top: 20px;">Tendencias Futuras</h3>
                 <p><strong>AI DJ:</strong> Una voz sintética que te presenta canciones.<br>
-                <strong>Video Pódcasts:</strong> Compitiendo directamente con YouTube.<br>
-                <strong>HiFi (Supremium):</strong> El rumor eterno de un plan con audio sin pérdida.</p>
+                    <strong>Video Pódcasts:</strong> Compitiendo directamente con YouTube.<br>
+                    <strong>HiFi (Supremium):</strong> El rumor eterno de un plan con audio sin pérdida.
+                </p>
             </div>
         </div>
     </section>
@@ -218,58 +242,27 @@
     <!-- 6. Artistas y Pagos -->
     <section id="artists" class="container">
         <h2>6. Economía de los Artistas</h2>
-        <p>El tema más polémico. Spotify no paga "por stream" fijo, sino un "pro-rata share" del pool total de ingresos.</p>
-        
+        <p>El tema más polémico. Spotify no paga "por stream" fijo, sino un "pro-rata share" del pool total de ingresos.
+        </p>
+
         <div class="grid-2">
             <div>
                 <h3>El Modelo Pro-Rata</h3>
-                <p>Si tus canciones representan el 1% de todos los streams en España, te llevas el 1% del dinero generado en España (menos la comisión de Spotify). Esto favorece a los mega-artistas.</p>
+                <p>Si tus canciones representan el 1% de todos los streams en España, te llevas el 1% del dinero
+                    generado en España (menos la comisión de Spotify). Esto favorece a los mega-artistas.</p>
                 <div class="card" style="margin-top: 20px; border-left: 4px solid #1DB954;">
                     <h4>Cambios 2024</h4>
-                    <p>Spotify introdujo un umbral mínimo de 1,000 streams anuales para empezar a cobrar, eliminando pagos a "ruido blanco" y pistas basura.</p>
+                    <p>Spotify introdujo un umbral mínimo de 1,000 streams anuales para empezar a cobrar, eliminando
+                        pagos a "ruido blanco" y pistas basura.</p>
                 </div>
             </div>
             <div>
                 <div class="chart-container">
                     <canvas id="payoutChart"></canvas>
                 </div>
-                <p style="font-size: 0.8rem; margin-top: 10px;">*Estimaciones. Los pagos reales varían por contrato y país.</p>
+                <p style="font-size: 0.8rem; margin-top: 10px;">*Estimaciones. Los pagos reales varían por contrato y
+                    país.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- 7. Tutorial GitHub Pages -->
-    <section id="github" class="container">
-        <h2>7. Cómo Publicar esta Web en GitHub Pages</h2>
-        <p>Esta misma presentación está diseñada para alojarse gratuitamente. Aquí el proceso:</p>
-        
-        <div class="grid-2">
-            <div>
-                <h3>Paso 1: Estructura</h3>
-                <p>Asegúrate de tener un archivo <code>index.html</code> en la raíz de tu carpeta.</p>
-                <pre>
-/mi-repo
-  ├── index.html
-  ├── css/
-  │   └── styles.css
-  └── js/
-      └── script.js</pre>
-            </div>
-            <div>
-                <h3>Paso 2: Subir a GitHub</h3>
-                <p>Crea un repositorio público y sube tus archivos.</p>
-                <pre>
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/usuario/repo.git
-git push -u origin main</pre>
-            </div>
-        </div>
-        <div style="margin-top: 30px;">
-            <h3>Paso 3: Activar Pages</h3>
-            <p>Ve a <strong>Settings > Pages</strong> en tu repositorio. En "Source", selecciona la rama <code>main</code> y la carpeta <code>/ (root)</code>. ¡Listo! En unos minutos tendrás tu URL.</p>
         </div>
     </section>
 
@@ -277,7 +270,9 @@ git push -u origin main</pre>
     <section id="conclusion" class="container" style="text-align: center;">
         <h2>8. Conclusión</h2>
         <p style="max-width: 700px; margin: 0 auto;">
-            Spotify ha redefinido nuestra relación con la música, pasando de la propiedad (CDs, MP3s) al acceso ilimitado. Aunque enfrenta desafíos financieros y competencia feroz, su inversión en IA y Pódcasts sugiere que seguirá siendo el "Sistema Operativo de Audio" del mundo por muchos años más.
+            Spotify ha redefinido nuestra relación con la música, pasando de la propiedad (CDs, MP3s) al acceso
+            ilimitado. Aunque enfrenta desafíos financieros y competencia feroz, su inversión en IA y Pódcasts sugiere
+            que seguirá siendo el "Sistema Operativo de Audio" del mundo por muchos años más.
         </p>
         <div style="margin-top: 50px;">
             <a href="#hero" class="btn">Volver al Inicio</a>
@@ -293,4 +288,5 @@ git push -u origin main</pre>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
